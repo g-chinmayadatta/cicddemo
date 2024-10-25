@@ -1,0 +1,25 @@
+pipeline{
+    agent any
+    stages{
+        stage ("Build"){
+            steps{
+                echo "We are in Build Stage in SCM File"
+            }
+        }
+        stage ("Deploy"){
+            steps{
+                echo "We are in Deploy Stage in SCM File"
+            }
+        }
+        stage ("Test"){
+            steps{
+                echo "We are in Test Stage in SCM File"
+            }
+        }
+        stage ("Release"){
+            steps{
+                echo "We are in Release Stage in SCM File"
+            }
+        }
+    }
+}
